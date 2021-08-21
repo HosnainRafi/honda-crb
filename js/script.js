@@ -75,5 +75,8 @@ document.getElementById('promo-apply-button').addEventListener('click',function(
         document.getElementById('extra-total-cost').innerText = extraTotal - (extraTotal * 0.2);
         promoInput.setAttribute('disabled', true);
     }
+    else{
+        alert("invalid promo code");
+    }
     promoInput.value = '';
 })
